@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services | Absolute Window Cleaning & Pressure Washing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Urbanist:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              heading: ["Urbanist", "Inter", "sans-serif"],
+            },
+            colors: {
+              page: "#F4F9FF",
+              brand: "#B3D6F9",
+              brandDeep: "#1F3E5A",
+              slatefooter: "#374756",
+            },
+            boxShadow: {
+              soft: "0 18px 42px rgba(33, 74, 115, 0.10)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-page font-sans text-black" data-page="services">
+    <header class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+        <a href="./index.html" class="font-heading text-lg font-bold tracking-tight">Absolute</a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-black/65 md:flex">
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./services.html" class="nav-link">Services</a>
+          <a href="./about.html" class="nav-link">About Us</a>
+          <a href="./gallery.html" class="nav-link">Results</a>
+        </nav>
+        <a href="./index.html#quote" class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-brandDeep">Get quote</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-7xl px-6 py-20 text-center lg:py-24">
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-black/45">Services</p>
+        <h1 class="mt-4 font-heading text-5xl font-bold tracking-[-0.04em] text-black sm:text-6xl">Our services</h1>
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-black/70">
+          Expert cleaning solutions tailored for your home, delivered with precision,
+          professionalism, and care. See what we can do for you by filling out our remote quote
+          or texting us!
+        </p>
+        <div class="mt-8">
+          <a
+            href="./index.html#quote"
+            class="inline-flex rounded-full bg-brand px-6 py-3 text-sm font-semibold text-brandDeep shadow-soft transition hover:-translate-y-0.5"
+            >Remote Quote</a
+          >
+        </div>
+      </section>
+
+      <section class="bg-white py-20 lg:py-24">
+        <div class="mx-auto max-w-7xl space-y-16 px-6">
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-black/45">Window Cleaning</p>
+              <h2 class="mt-4 font-heading text-4xl font-bold tracking-[-0.03em] text-black">Clean, clear, consistent exterior care.</h2>
+              <p class="mt-4 text-base leading-8 text-black/70">
+                We specialize in restoring your home’s shine from the outside. Our process
+                includes high-definition glass cleaning, frame wiping, and screen dusting,
+                giving you a perfect view without our boots ever touching your carpets.
+              </p>
+              <ul class="mt-6 space-y-3 text-sm leading-7 text-black/68">
+                <li>Full pane revitalization</li>
+                <li>Screens and tracks cleaned</li>
+                <li>Sills and frames polished</li>
+              </ul>
+            </div>
+            <img class="aspect-[4/3] w-full rounded-[24px] object-cover shadow-soft" src="./assets/yoshicleaningwindow.jpeg" alt="Window cleaning service" />
+          </div>
+
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <img class="order-2 aspect-[4/3] w-full rounded-[24px] object-cover shadow-soft lg:order-1" src="./assets/surfacecleanerkirkwood.jpeg" alt="Pressure washing service" />
+            <div class="order-1 lg:order-2">
+              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-black/45">Pressure Washing</p>
+              <h2 class="mt-4 font-heading text-4xl font-bold tracking-[-0.03em] text-black">Restore surfaces to like-new condition.</h2>
+              <p class="mt-4 text-base leading-8 text-black/70">
+                Driveways, sidewalks, patios, and pool decks take a beating from dirt and weather.
+                We use calibrated pressure and technique to remove years of buildup without damage.
+              </p>
+              <div class="mt-8 grid gap-6 sm:grid-cols-2">
+                <article>
+                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-brand/45 text-brandDeep">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M4 18h16" />
+                      <path d="M6 18 9 9h6l3 9" />
+                      <path d="M10 13h4" />
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-semibold text-black">Concrete renewal</h3>
+                  <p class="mt-2 text-sm leading-7 text-black/68">
+                    Driveways and sidewalks stripped clean of years of grime and weathering.
+                  </p>
+                </article>
+                <article>
+                  <div class="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-brand/45 text-brandDeep">
+                    <svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M5 19h14" />
+                      <path d="M7 19v-5l5-3 5 3v5" />
+                      <path d="M9 10.5V8a3 3 0 0 1 6 0v2.5" />
+                    </svg>
+                  </div>
+                  <h3 class="text-lg font-semibold text-black">Outdoor spaces</h3>
+                  <p class="mt-2 text-sm leading-7 text-black/68">
+                    Patios and pool decks transformed back to their original brightness and safety.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-black/45">Soft Washing</p>
+              <h2 class="mt-4 font-heading text-4xl font-bold tracking-[-0.03em] text-black">Gentle power for delicate surfaces</h2>
+              <p class="mt-4 text-base leading-8 text-black/70">
+                House siding, gutters, and fences need care that won't cause harm. Soft washing
+                uses low-pressure water and eco-friendly solutions to eliminate moss and mildew
+                safely.
+              </p>
+            </div>
+            <img class="aspect-[4/3] w-full rounded-[24px] object-cover shadow-soft" src="./assets/kirkwoodsoftwash.jpeg" alt="Soft washing service" />
+          </div>
+
+          <div class="grid items-center gap-10 lg:grid-cols-2">
+            <img class="order-2 aspect-[4/3] w-full rounded-[24px] object-cover shadow-soft lg:order-1" src="./assets/mrfounderdeckbrush.jpeg" alt="Deck and fence cleaning service" />
+            <div class="order-1 lg:order-2">
+              <p class="text-sm font-semibold uppercase tracking-[0.24em] text-black/45">Deck / Fence Cleaning</p>
+              <h2 class="mt-4 font-heading text-4xl font-bold tracking-[-0.03em] text-black">Deep cleaning that protects your deck's integrity</h2>
+              <p class="mt-4 text-base leading-8 text-black/70">
+                Years of weather and foot traffic don't have to be permanent. Our zero-pressure
+                soft-wash system removes algae, mold, and oxidation without scarring the wood or
+                damaging composite materials. We make your outdoor entertaining areas safe, clean,
+                and ready for visitors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-page py-20 lg:py-24">
+        <div class="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.9fr,1.1fr]">
+          <div>
+            <h2 class="font-heading text-4xl font-bold tracking-[-0.03em] text-black sm:text-5xl">FAQs</h2>
+            <p class="mt-4 max-w-md text-base leading-8 text-black/70">
+              Answers to common questions about our cleaning and washing services.
+            </p>
+          </div>
+
+          <div class="space-y-8">
+            <article>
+              <h3 class="text-xl font-semibold text-black">How often should windows be cleaned?</h3>
+              <p class="mt-3 text-sm leading-7 text-black/68">
+                Most homes benefit from professional window cleaning twice yearly, typically in
+                spring and fall. Coastal areas or homes near trees may need more frequent service.
+                We'll assess your situation and recommend a schedule that keeps your windows crystal
+                clear year-round.
+              </p>
+            </article>
+
+            <article>
+              <h3 class="text-xl font-semibold text-black">What does pressure washing include?</h3>
+              <p class="mt-3 text-sm leading-7 text-black/68">
+                Our pressure washing covers driveways, sidewalks, patios, and pool decks with
+                equipment calibrated for each surface. We remove dirt, algae, and stains without
+                damaging concrete or stone. Every job includes a thorough rinse and cleanup.
+              </p>
+            </article>
+
+            <article>
+              <h3 class="text-xl font-semibold text-black">How does your pricing work?</h3>
+              <p class="mt-3 text-sm leading-7 text-black/68">
+                When quoting a job, we take into mind how long a job will take without rushing any
+                details, travel time, and chemical costs. Rest assured that all customers are
+                quoted using the same formulas.
+              </p>
+            </article>
+
+            <article>
+              <h3 class="text-xl font-semibold text-black">Do I need to prepare my property?</h3>
+              <p class="mt-3 text-sm leading-7 text-black/68">
+                Light preparation on your part helps us work efficiently. Move vehicles from
+                driveways, secure loose outdoor items, and ensure we can access water sources.
+                We'll handle the rest and leave your property clean and undisturbed.
+              </p>
+            </article>
+
+            <article>
+              <h3 class="text-xl font-semibold text-black">Will you take the paint off the side of my house?</h3>
+              <p class="mt-3 text-sm leading-7 text-black/68">
+                Absolutely not! We take extra care in all services to ensure that we make your
+                property better, not worse.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slatefooter py-12 text-white">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-col items-center justify-between gap-6 border-b border-white/15 pb-8 text-sm md:flex-row">
+          <a href="./index.html" class="font-heading text-lg font-bold">Absolute</a>
+          <nav class="flex flex-wrap items-center justify-center gap-6 text-white/80">
+            <a href="./index.html">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./about.html">About Us</a>
+            <a href="./gallery.html">Gallery</a>
+          </nav>
+          <div class="flex items-center gap-4 text-white/80">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">FB</a>
+            <a href="https://www.instagram.com/absolutecleaningstl/" target="_blank" rel="noreferrer">IG</a>
+          </div>
+        </div>
+        <p class="pt-6 text-center text-sm text-white/65">
+          Copyright 2026 Absolute Window Cleaning & Pressure Washing. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

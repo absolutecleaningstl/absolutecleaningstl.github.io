@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | Absolute Window Cleaning & Pressure Washing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Urbanist:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+              heading: ["Urbanist", "Inter", "sans-serif"],
+            },
+            colors: {
+              page: "#F4F9FF",
+              brand: "#B3D6F9",
+              brandDeep: "#1F3E5A",
+              slatefooter: "#374756",
+            },
+            boxShadow: {
+              soft: "0 18px 42px rgba(33, 74, 115, 0.10)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="bg-page font-sans text-black" data-page="gallery">
+    <header class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-7xl items-center justify-between gap-4 px-6 py-4">
+        <a href="./index.html" class="font-heading text-lg font-bold tracking-tight">Absolute</a>
+        <nav class="hidden items-center gap-8 text-sm font-medium text-black/65 md:flex">
+          <a href="./index.html" class="nav-link">Home</a>
+          <a href="./services.html" class="nav-link">Services</a>
+          <a href="./about.html" class="nav-link">About Us</a>
+          <a href="./gallery.html" class="nav-link">Results</a>
+        </nav>
+        <a href="./index.html#quote" class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-brandDeep">Get quote</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="mx-auto max-w-7xl px-6 py-20 text-center lg:py-24">
+        <p class="text-sm font-semibold uppercase tracking-[0.24em] text-black/45">Portfolio</p>
+        <h1 class="mt-4 font-heading text-5xl font-bold tracking-[-0.04em] text-black sm:text-6xl">See the difference</h1>
+        <p class="mx-auto mt-6 max-w-2xl text-base leading-8 text-black/70">
+          Real homes, reviews, and results you can see at a glance.
+        </p>
+        <div class="mt-8">
+          <a
+            href="./index.html#quote"
+            class="inline-flex rounded-full bg-brand px-6 py-3 text-sm font-semibold text-brandDeep shadow-soft transition hover:-translate-y-0.5"
+            >Remote Quote</a
+          >
+        </div>
+      </section>
+
+      <section class="bg-white pb-8 lg:pb-12">
+        <div class="mx-auto max-w-7xl space-y-10 px-6">
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img
+                src="./assets/beforeafterangela.jpeg"
+                alt="Before and after project result"
+                class="aspect-square w-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-base leading-8 text-black/72">
+                The guys showed up 15 minutes before the job [house wash] and were done within an
+                hour and a half. I was worried about my plants, but if you hadn't looked at the
+                siding before and after, you never would have known they were there. Five stars.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Rick S.</p>
+              <p class="text-sm text-black/55">Homeowner | Town & Country</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-base leading-8 text-black/72">
+                Besides being knowledgeable and dependable, Logan provided excellent service and
+                did an amazing job. I would highly recommend his company, as we were very pleased
+                with the end results.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Sue B.</p>
+              <p class="text-sm text-black/55">Homeowner | The Hill</p>
+            </div>
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img
+                src="./assets/beforeaftersue.jpeg"
+                alt="Before and after project result"
+                class="aspect-square w-full object-cover"
+              />
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img
+                src="./assets/beforeaftersidingcolumn.jpeg"
+                alt="Before and after project result"
+                class="aspect-square w-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-base leading-8 text-black/72">
+                I was worried about the moss and black buildup on our siding, but they handled it
+                effortlessly, and I didn't even have to be home. The team was super thorough, and
+                the house looks like it was just built. Super pleased with how it looks now.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Mike R.</p>
+              <p class="text-sm text-black/55">Homeowner | Imperial</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-base leading-8 text-black/72">
+                Our outdoor deck was looking so dark, with these green spots on it, but after they
+                finished, the wood looks brand new again. They were very careful with our patio
+                furniture. The guys have a repeat customer in us.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Carol S.</p>
+              <p class="text-sm text-black/55">Homeowner | Sunset Hills</p>
+            </div>
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img
+                src="./assets/beforeafterangeladeck.jpeg"
+                alt="Before and after project result"
+                class="aspect-square w-full object-cover"
+              />
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img
+                src="./assets/beforeafterbricklight.jpeg"
+                alt="Before and after project result"
+                class="aspect-square w-full object-cover"
+              />
+            </div>
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-base leading-8 text-black/72">
+                Our brick was literally green from the giant oak on the east side of our house. We
+                just had them out for the stucco, we didn't think they could get it off but they
+                were able to! Our thanks to the boys.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Dave P.</p>
+              <p class="text-sm text-black/55">Homeowner | Fenton</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl">
+                <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              </div>
+              <p class="text-base leading-8 text-black/72">
+                Absolute did a great job - our driveway was super dark, almost looked like asphalt.
+                It's great now!
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">James M.</p>
+              <p class="text-sm text-black/55">Homeowner | Valley Park</p>
+            </div>
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img
+                src="./assets/beforeafterwarren.jpeg"
+                alt="Before and after project result"
+                class="aspect-square w-full object-cover"
+              />
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img src="./assets/beforeaftermrssmith.jpeg" alt="Before and after project result" class="aspect-square w-full object-cover" />
+            </div>
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <p class="text-base leading-8 text-black/72">
+                The siding on our home was long overdue for a wash. Absolute arrived right on time
+                and didn't leave a single bit behind. Our dog actually ran out when my kids got
+                home from school, and they stopped cleaning until I was able to come get the leash
+                and bring him back in. Great service.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Tom H.</p>
+              <p class="text-sm text-black/55">Homeowner | Fenton</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <p class="text-base leading-8 text-black/72">
+                We're moving soon and getting some stains removed was important says our agent I
+                think it will help us sell too
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Bob S.</p>
+              <p class="text-sm text-black/55">Homeowner | Arnold</p>
+            </div>
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img src="./assets/beforeafterstain3.jpeg" alt="Before and after project result" class="aspect-square w-full object-cover" />
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img src="./assets/beforeafterkeli.jpeg" alt="Before and after project result" class="aspect-square w-full object-cover" />
+            </div>
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <p class="text-base leading-8 text-black/72">
+                I am so impressed with how they treated our siding. The last company tried to use
+                pressure on it and I fired them instantly but not this time. I'll have them back
+                next year for the driveway and patios.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Kevin J.</p>
+              <p class="text-sm text-black/55">Homeowner | Fenton</p>
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <p class="text-base leading-8 text-black/72">
+                Years of dirt under our deck are completely gone. I thought the grill stain would
+                still be partly visible but it isn't. I posted them on the Facebook group, and
+                hope they continue to have success!
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Brenda W.</p>
+              <p class="text-sm text-black/55">Homeowner | Des Peres</p>
+            </div>
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img src="./assets/beforeafterelderfingerhuts.jpeg" alt="Before and after project result" class="aspect-square w-full object-cover" />
+            </div>
+          </article>
+
+          <article class="grid gap-8 rounded-[24px] bg-page p-6 shadow-soft lg:grid-cols-2 lg:items-center">
+            <div class="overflow-hidden rounded-[24px] bg-white shadow-soft">
+              <img src="./assets/beforeafterbricksiding.jpeg" alt="Before and after project result" class="aspect-square w-full object-cover" />
+            </div>
+            <div>
+              <div class="mb-4 flex gap-1 text-[#F5B301] text-xl"><span>★</span><span>★</span><span>★</span><span>★</span><span>★</span></div>
+              <p class="text-base leading-8 text-black/72">
+                Our front porch and sidewalk were a mess, but they are absolutely spotless now.
+                They overdelivered and washed down our furniture too, more than what they promised.
+                Good communication with my wife too on arrival and when they were done.
+              </p>
+              <p class="mt-4 text-sm font-semibold text-black">Chris S.</p>
+              <p class="text-sm text-black/55">Homeowner | Fenton</p>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="bg-white py-20 lg:py-24">
+        <div class="mx-auto grid max-w-7xl gap-6 px-6 md:grid-cols-2 xl:grid-cols-3">
+          <a href="./assets/gallery-1.svg" class="group relative overflow-hidden rounded-[24px] shadow-soft">
+            <img class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105" src="./assets/gallery-1.svg" alt="Project 1" />
+            <div class="absolute inset-0 flex items-center justify-center bg-brandDeep/0 text-sm font-semibold text-white transition group-hover:bg-brandDeep/45">
+              <span class="opacity-0 transition group-hover:opacity-100">View Project</span>
+            </div>
+          </a>
+          <a href="./assets/gallery-2.svg" class="group relative overflow-hidden rounded-[24px] shadow-soft">
+            <img class="aspect-video w-full object-cover transition duration-300 group-hover:scale-105" src="./assets/gallery-2.svg" alt="Project 2" />
+            <div class="absolute inset-0 flex items-center justify-center bg-brandDeep/0 text-sm font-semibold text-white transition group-hover:bg-brandDeep/45">
+              <span class="opacity-0 transition group-hover:opacity-100">View Project</span>
+            </div>
+          </a>
+          <a href="./assets/gallery-3.svg" class="group relative overflow-hidden rounded-[24px] shadow-soft">
+            <img class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105" src="./assets/gallery-3.svg" alt="Project 3" />
+            <div class="absolute inset-0 flex items-center justify-center bg-brandDeep/0 text-sm font-semibold text-white transition group-hover:bg-brandDeep/45">
+              <span class="opacity-0 transition group-hover:opacity-100">View Project</span>
+            </div>
+          </a>
+          <a href="./assets/gallery-4.svg" class="group relative overflow-hidden rounded-[24px] shadow-soft">
+            <img class="aspect-video w-full object-cover transition duration-300 group-hover:scale-105" src="./assets/gallery-4.svg" alt="Project 4" />
+            <div class="absolute inset-0 flex items-center justify-center bg-brandDeep/0 text-sm font-semibold text-white transition group-hover:bg-brandDeep/45">
+              <span class="opacity-0 transition group-hover:opacity-100">View Project</span>
+            </div>
+          </a>
+          <a href="./assets/gallery-5.svg" class="group relative overflow-hidden rounded-[24px] shadow-soft">
+            <img class="aspect-square w-full object-cover transition duration-300 group-hover:scale-105" src="./assets/gallery-5.svg" alt="Project 5" />
+            <div class="absolute inset-0 flex items-center justify-center bg-brandDeep/0 text-sm font-semibold text-white transition group-hover:bg-brandDeep/45">
+              <span class="opacity-0 transition group-hover:opacity-100">View Project</span>
+            </div>
+          </a>
+          <a href="./assets/gallery-6.svg" class="group relative overflow-hidden rounded-[24px] shadow-soft">
+            <img class="aspect-video w-full object-cover transition duration-300 group-hover:scale-105" src="./assets/gallery-6.svg" alt="Project 6" />
+            <div class="absolute inset-0 flex items-center justify-center bg-brandDeep/0 text-sm font-semibold text-white transition group-hover:bg-brandDeep/45">
+              <span class="opacity-0 transition group-hover:opacity-100">View Project</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slatefooter py-12 text-white">
+      <div class="mx-auto max-w-7xl px-6">
+        <div class="flex flex-col items-center justify-between gap-6 border-b border-white/15 pb-8 text-sm md:flex-row">
+          <a href="./index.html" class="font-heading text-lg font-bold">Absolute</a>
+          <nav class="flex flex-wrap items-center justify-center gap-6 text-white/80">
+            <a href="./index.html">Home</a>
+            <a href="./services.html">Services</a>
+            <a href="./about.html">About Us</a>
+            <a href="./gallery.html">Gallery</a>
+          </nav>
+          <div class="flex items-center gap-4 text-white/80">
+            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer">FB</a>
+            <a href="https://www.instagram.com/absolutecleaningstl/" target="_blank" rel="noreferrer">IG</a>
+          </div>
+        </div>
+        <p class="pt-6 text-center text-sm text-white/65">
+          Copyright 2026 Absolute Window Cleaning & Pressure Washing. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
