@@ -296,19 +296,19 @@
               <p class="text-sm font-semibold uppercase tracking-[0.24em] text-black/45">Remote quote</p>
               <h2 class="mt-4 font-heading text-4xl font-bold tracking-[-0.03em] text-black">Request a quote that sends directly to us</h2>
               <p class="mt-4 text-base leading-8 text-black/70">
-                Fill this out once and send it by text. We’ll receive your name, address,
-                requested services, and the best way to reply.
+                Fill this out once and send it by text or email. We’ll receive your name,
+                address, requested services, and the best way to reply.
               </p>
               <ul class="mt-6 space-y-3 text-sm leading-7 text-black/68">
                 <li>Choose one or more services</li>
                 <li>Add your address and contact details</li>
-                <li>Send instantly by text</li>
+                <li>Send instantly by text or email</li>
               </ul>
             </div>
             <div id="quote" class="rounded-[24px] border border-white/80 bg-white p-6 shadow-soft">
               <div class="border-b border-black/8 pb-4">
                 <p class="font-semibold text-black">Remote quote form</p>
-                <p class="mt-1 text-sm text-black/55">Complete the details below, then text the quote request to us.</p>
+                <p class="mt-1 text-sm text-black/55">Complete the details below, then send the quote request to us by text or email.</p>
               </div>
               <form id="quote-form" class="mt-6 space-y-5">
                 <div class="grid gap-5 md:grid-cols-2">
@@ -397,20 +397,28 @@
 
                 <div class="flex flex-wrap gap-3">
                   <button
-                    type="submit"
+                    type="button"
+                    data-quote-action="sms"
                     class="rounded-full bg-brand px-5 py-2.5 text-sm font-semibold text-brandDeep transition hover:-translate-y-0.5"
                   >
                     Text quote request
+                  </button>
+                  <button
+                    type="button"
+                    data-quote-action="email"
+                    class="rounded-full bg-black/10 px-5 py-2.5 text-sm font-semibold text-black transition hover:-translate-y-0.5 hover:bg-black/15"
+                  >
+                    Email quote request
                   </button>
                 </div>
 
                 <div class="rounded-[20px] bg-brand/50 px-4 py-4 text-sm leading-7 text-brandDeep">
                   <p class="font-semibold">What happens next</p>
                   <p class="mt-1">
-                    On iPhone, your text may open prefilled. On Mac, Messages may open without the
-                    text added automatically, so we’ll copy your quote request for you. If that
-                    happens, just create and send a new text to (314) 452-8355 with the
-                    information pasted from your clipboard.
+                    Once you hit submit, your messaging app or email will automatically open. To
+                    finish your request, simply paste your details (Ctrl + V) into the message and
+                    hit send. This sends your quote directly to our team’s phone and inbox so we
+                    can get back to you as soon as possible!
                   </p>
                 </div>
 

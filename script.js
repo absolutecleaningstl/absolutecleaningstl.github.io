@@ -42,6 +42,7 @@ if (quoteForm) {
   const quoteFormMessage = document.getElementById("quote-form-message");
   const quoteFormHelp = document.getElementById("quote-form-help");
   const serviceOptions = quoteForm.querySelectorAll(".service-option");
+  const quoteActionButtons = quoteForm.querySelectorAll("[data-quote-action]");
 
   serviceOptions.forEach((option) => {
     const checkbox = option.querySelector('input[type="checkbox"]');
@@ -54,9 +55,7 @@ if (quoteForm) {
     syncState();
   });
 
-  quoteForm.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
+  const prepareQuoteRequest = () => {
     const formData = new FormData(quoteForm);
     const name = String(formData.get("name") || "").trim();
     const address = String(formData.get("address") || "").trim();
@@ -69,21 +68,21 @@ if (quoteForm) {
       quoteFormMessage.textContent = "Please add your name and address.";
       quoteFormHelp.textContent = "";
       quoteFormHelp.classList.add("hidden");
-      return;
+      return null;
     }
 
     if (services.length === 0) {
       quoteFormMessage.textContent = "Please choose at least one service.";
       quoteFormHelp.textContent = "";
       quoteFormHelp.classList.add("hidden");
-      return;
+      return null;
     }
 
     if (!phone) {
       quoteFormMessage.textContent = "Please include a phone number so you can receive a reply.";
       quoteFormHelp.textContent = "";
       quoteFormHelp.classList.add("hidden");
-      return;
+      return null;
     }
 
     quoteFormMessage.textContent = "";
@@ -104,20 +103,38 @@ if (quoteForm) {
       lines.push(`Details: ${details}`);
     }
 
-    const messageText = lines.join("\n");
-    const body = encodeURIComponent(messageText);
-    const isMac = /Mac|Macintosh/.test(navigator.userAgent);
+    return lines.join("\n");
+  };
 
-    if (isMac) {
-      const copied = await copyText(messageText);
-      quoteFormHelp.textContent = copied
-        ? "Messages is opening now. If the text does not appear automatically, create a new text to (314) 452-8355 and press Cmd+V to paste your quote request."
-        : "Messages is opening now. If the text does not appear automatically, create a new text to (314) 452-8355 and paste your quote request manually.";
-      quoteFormHelp.classList.remove("hidden");
-      window.location.href = "sms:+13144528355";
+  const openQuoteRequest = async (channel) => {
+    const messageText = prepareQuoteRequest();
+
+    if (!messageText) {
       return;
     }
 
-    window.location.href = `sms:+13144528355?body=${body}`;
+    const copied = await copyText(messageText);
+    quoteFormHelp.textContent = copied
+      ? "Your app is opening now. If the details do not appear automatically, press Ctrl + V to paste your quote request, then hit send."
+      : "Your app is opening now. If the details do not appear automatically, paste your quote request manually, then hit send.";
+    quoteFormHelp.classList.remove("hidden");
+
+    const body = encodeURIComponent(messageText);
+
+    if (channel === "email") {
+      const subject = encodeURIComponent("Quote Request");
+      window.location.href = `mailto:absolutecleaningstl@gmail.com?subject=${subject}&body=${body}`;
+      return;
+    }
+
+    const isMac = /Mac|Macintosh/.test(navigator.userAgent);
+    window.location.href = isMac ? "sms:+13144528355" : `sms:+13144528355?body=${body}`;
+  };
+
+  quoteActionButtons.forEach((button) => {
+    button.addEventListener("click", async () => {
+      const channel = button.dataset.quoteAction;
+      await openQuoteRequest(channel);
+    });
   });
 }
